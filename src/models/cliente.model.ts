@@ -23,11 +23,6 @@ export class Cliente extends Entity {
 
   @property({
     type: 'string',
-  })
-  direccion?: string;
-
-  @property({
-    type: 'string',
     required: true,
   })
   correo: string;
