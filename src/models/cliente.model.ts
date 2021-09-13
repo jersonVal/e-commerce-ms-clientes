@@ -16,10 +16,15 @@ export class Cliente extends Entity {
   nombre: string;
 
   @property({
-    type: 'number',
+    type: 'string',
     required: true,
   })
-  documento: number;
+  documento: string;
+
+  @property({
+    type: 'string',
+  })
+  direccion?: string;
 
   @property({
     type: 'string',
@@ -28,10 +33,10 @@ export class Cliente extends Entity {
   correo: string;
 
   @property({
-    type: 'number',
+    type: 'string',
     required: true,
   })
-  celular: number;
+  celular: string;
 
   @property({
     type: 'number',
